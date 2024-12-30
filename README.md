@@ -68,17 +68,16 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   > Register TMDB API and create an app , get access token 
   > Get data from TMDB now playing movies list api.
   > Custom hooks for Now Playing Movie.
-  > Create Movie slice Update store with movie data.
+  > Create Movie slice. 
+  > Update store with movie data.
   > Planning for MainContainer and SecondaryContainer.
-  > Fetch data and Update store with trailer video.
+  > Fetch data for trailer video.
+  > Update store with trailer video.
   > Embeded video make it autoplay and mute and tailwind classes for main container.
   > Build Secondary Component.
   > Build Movie List and Movie Card.
   > TMDB Image CDN URL.
-  > Created Popular Movie Custom Hook.
-  > GPT Search Page and Search bar with multi-language feature.(BONUS)
-  >
-
+  > Popular Movie Custom Hook.
 
 # Featurand 
   > Login / Sign Up 
