@@ -63,10 +63,10 @@ const Header = () => {
   }
   return (
     // <>
-    <div className="absolute px-10 py-5 bg-gradient-to-b from-black z-10 flex justify-between">
+    <div className="absolute px-10 py-5 bg-gradient-to-b from-black z-10 flex justify-between bg-black sm:bg-blue-900 md:bg-gray-800">
       <img className="w-44" src="" alt="logo" />
       {headerUser && (
-        <div className="flex p-2">
+        <div className="flex p-2 justify-between">
         {enableGptSearch &&  (<select className="m-2 p-2 text-white" onChange={handleLanguageChange}>
             {supported_languages.map((lang)=>(<option key={lang.identifier} value={lang.identifier}>{lang.name}</option>))}
           </select>)}
@@ -74,10 +74,12 @@ const Header = () => {
             className="mx-2 px-3 py-2 bg-purple-500 text-white rounded-lg"
             onClick={handleSearchClick}
           >
-            {enableGptSearch?"Home Page":"GPT Search"}
+            {enableGptSearch?"Home Page":"GPT Search"} 
+{/* Once you search suggestion and get result now want to go from Home Page to browse page again visit gpt page you still get last search
+data kinly add "removSlice()" method then issue is fix*/}
           </button>
           <img
-            className="w-12 h-12 p-4"
+            className="hidden md:block w-12 h-12 p-4"
             alt="usericon"
             src={headerUser?.photoURL}
           />

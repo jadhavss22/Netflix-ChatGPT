@@ -1,9 +1,10 @@
-import { useEffect, useDispatch } from "react";
+import { useEffect, useDispatch, useSelector } from "react";
 import { apiAuthorisation } from "../Utils/constant";
 import { addVideoTrailer } from "../Utils/movieSlice";
 
 const useTrailerVideo = (movieId) => {
-  // fetch trailer video and updating store with trailer video data.b
+  const trailerVideo = useSelector((store)=>store.movies.trailerVideo)
+
   const dispatch = useDispatch();
   const getMovieVieo = async () => {
     const data = await fetch(
@@ -22,7 +23,7 @@ const useTrailerVideo = (movieId) => {
 
   };
   useEffect(() => {
-    getMovieVieo();
+  !trailerVideo && getMovieVieo();
   }, []);
 };
 

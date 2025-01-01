@@ -77,7 +77,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   > TMDB Image CDN URL.
   > Created Popular Movie Custom Hook.
   > GPT Search Page and Search bar with multi-language feature.(BONUS)
-  >
+  > Get Open AI api key and GPT Search API call.
+  > Fetched gptMovieSuggestion from TMDB.
+  > Created gptSlice added data.
+  > Reused MovieList component to make movie suggestion container.
+  > Memoization
+  > Added .env file and added to gitignore.
+  > Make application Responsive
 
 
 # Featurand 
@@ -100,6 +106,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 1.Paste three commands in vscode :
     git remote add origin git@github.com:jadhavss22/Netflix-GPT.git
     git branch -M main/Netflix-gpt
+    git commit -m "code_desc"
     git push -u origin main/Netflix-gpt
 Once you pushed all the code is comes in your repopsitory.
     To add userName ==> git config --global user.name "jadhavss22"
@@ -109,7 +116,7 @@ Once you pushed all the code is comes in your repopsitory.
 3.Install and Configure Tailwind CSS.
 4.Deploy project URL : `https://netflix-chatgpt-c29ad.firebaseapp.com`
 5.APIkey for TMDB api to access movies : 
-  `Apikey` : 7366b1e803b0beed7fd66931771888ed
+  > sign up tmdb movie and go to 'More' section inside there is 'API' fill details you will get below info :
   `Apiket token` : eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MzY2YjFlODAzYjBiZWVkN2ZkNjY5MzE3NzE4ODhlZCIsIm5iZiI6MTczNDg2NDExNy40OTQwMDAyLCJzdWIiOiI2NzY3ZWNmNTFiMDZjNWYyOGI3NGQyNGYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.jiowgon1hBy9Jwws1jbFZWRfgh_sHr977CDtOB2AznE
 
 
